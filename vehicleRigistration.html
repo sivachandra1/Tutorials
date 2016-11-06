@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css"></link>
+
+
+</head>
+<body>
+  
+    <label>
+        Vehicle Identification Number
+        <input id="name" name="name" type="text" />
+    </label> <br/><br/>
+    
+ <label for="business">Year</label>
+<select id="year" name="year">
+    <script> 
+	var start = 1900;
+    var end = new Date().getFullYear();
+    var options = "";
+    for(var year = start ; year <=end; year++)
+	{
+   options += "<option>"+ year +"</option>";
+    }
+document.getElementById("year").innerHTML = options;
+	</script>
+	
+	</select><br/><br/>   
+	
+<label for="business">Vehicle Make</label>
+<select id="vehicleMake" name="vehicleMake">
+    <option value="0">none</option>
+	<option value="1">BMW</option>
+	<option value="2">Audi</option>
+	<option value="3">Ferrari</option>
+	<option value="4">Dodge</option>
+</select><br/><br/>
+<label for="business" name="business">Vehicle Model</label> 
+<select id="vehicleModel" name="vehicleModel">
+    <option value="0">A1</option>
+	<option value="1">A2</option>
+	<option value="2">A3</option>
+	<option value="3">A4</option>
+	<option value="4">A5</option>
+</select>
+<button> Add Vehicle</button>
+
+<script src ="vehicle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
