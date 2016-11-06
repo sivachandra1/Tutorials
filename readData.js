@@ -54,7 +54,7 @@ function validateNumber(event)
 			event.preventDefault();
 		}
 		
-}
+}//bindEvents 
 	function bindEvents()
 	{
 		
@@ -70,6 +70,8 @@ function validateNumber(event)
 	
 	
 	bindEvents();
+	
+	
 	
 	
 	
