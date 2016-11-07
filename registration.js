@@ -33,7 +33,7 @@
 					
 				classElements[i].style.backgroundColor="yellow";
 				
-            }
+            }//siva kumar gd boy
 			var inputs = document.getElementsByTagName("input") ;
 				console.log(inputs);
 				for (var i=0; i<inputs.length; i++){
