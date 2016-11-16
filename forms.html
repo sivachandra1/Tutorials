@@ -1,0 +1,226 @@
+<!Doctype html>
+
+<html>
+<head>
+<title>Forms</title>
+<meta charset="utf-8">
+<link href="C:\Users\siva kumar\Downloads\bootstrap\css\bootstrap.css" rel="stylesheet">
+<link href="C:\Users\siva kumar\Downloads\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+   <div class="span12">
+          <h2>Default Form</h2>
+	<form action="/signup" method="post" >
+	   <fieldset>
+	   <legend>To get started, provied us with the following information</legend>
+	   
+	   <label for="UserInfo_Email">Email:</label>
+	   <input id="UserInfo_Email" name="UserInfo.Email" type="text">
+	   <label for="UserInfo_FirstName">FirstName:</label><br>
+	   <input id="UserInfo_FistName" name="UserInfo.FirstName" type="text">
+	   <label for="UserInfo_LastName">LastName:</label><br>
+	   <input id="UserInfo_LastName" name="UserInfo.LastName" type="text">
+	   <label for="UserInfo_Company">Company:</label><br>
+	   <input id="UserInfo_Company" name="UserInfo.Company" type="text">
+	  
+	   <label for="UserInfo_HowHeard">How gid you hear about us ?</label>
+	  
+	   <select id="UserInfo_HowHeard_SelectByValue">
+	   
+           <option value="Blogs">Blogs</option>
+           <option value="Colleage">Colleage</option>
+           <option value="Returning Coustomer">Returning Coustomer</option>
+           <option value="Pluralsight instructor">Pluralsight instructor</option>
+		   <option value="Microsoft">Microsoft</option>
+           <option value="MSDN">MSDN</option>
+           <option value="Trade Show">Trade Show</option>
+           <option value="Search Engine">Search Engine</option>
+		   <option value="Facebook">Facebook</option>
+           <option value="Social Community">Social Community</option>
+           <option value="User Group">User Group</option>
+           <option value="Linkdien">Linkdien</option>
+		  		   
+    </select>
+	<label for="UserInfo_JobTitle">JobTitle:</label>
+	<input class="input-xxlarge" id="UserInfo_JobTitle" name="UserInfo.JobTitle" type="text">
+	
+  
+	<div class="checkbox">
+	   <label class="checkbox inline">
+	   <input type="checkbox" id="UserInfo_Check1" name="UserInfo.Check1" >
+	   I like Pina Coladas
+	   </label>
+	   <label class="checkbox inline">
+	   <input  type="checkbox" id="UserInfo_Check2" name="UserInfo.Check2" >
+	   I like getting caught in the rain
+	   </label>
+    </div>
+	<div class="radio">
+	    <label class="radio">
+		<input type="radio" name="gender" value="male" checked> 
+		I'm into yoga
+		
+	   </label>
+	   <label class="radio">	
+       <input type="radio" name="gender" value="female"> 
+		I'm not into yoga
+	   </label>
+	   
+	</div>
+	
+	
+	<label for="describe">Describ Yourself:</label>
+	
+	  <textarea class="Input_block_level" id="describe" rows="4"></textarea>
+	  <input type="submit" value="SignUp!" class="btn btn-primary"/>
+	  
+	  
+  </div>
+    
+	</fieldset>
+</form>
+
+  </div>
+
+
+<hr/>
+<div class="row">
+   <div class="span6"
+      <h2>Search</h2>
+	  <form>
+	     <input type="search" class="search-query">
+		 <button type="submit" class="btn">Search</button>
+	  </form>
+	</div>
+</div>
+<div class="row">
+   <div class="span12" >
+          <h2>Horizontal form</h2>
+	    <form action="/signup" method="post" class="form-horizontal">
+	   <fieldset>
+	   <legend>To get started, provied us with the following information</legend>
+	   <div class="control-group error">
+	      <label class="control-label" for="UserInfo_Email">Email:</label>
+		  <div class="controls">
+	         <input id="UserInfo_Email" name="UserInfo.Email" type="text">
+			 <span class="help- block"> To fill this form</span>
+		  </div>
+	   </div>
+	   <div class="control-group">
+	       <label class="control-label" for="UserInfo_FirstName">FirstName:</label>
+		   <div class="controls">
+	          <input id="UserInfo_FistName" name="UserInfo.FirstName" type="text">
+		   </div>
+	   </div>
+	   <div class="control-group">
+	        <label class="control-label" for="UserInfo_LastName">LastName:</label>
+			<div class="controls">
+	             <input id="UserInfo_LastName" name="UserInfo.LastName" type="text">
+		    </div>
+	   </div>
+	   <div class="control-group">
+	        <label class="control-label" for="UserInfo_Company">Company:</label>
+			<div class="controls">
+	             <input id="UserInfo_Company" name="UserInfo.Company" type="text">
+			</div>
+       </div>	
+       <div class="control-group">	   
+	       <label class="control-label" for="UserInfo_HowHeard">How gid you hear about us ?</label>
+	       <div class="controls">
+	         
+	      <select multiple id="UserInfo_HowHeard_SelectByValue">
+	   
+           <option value="Blogs">Blogs</option>
+           <option value="Colleage">Colleage</option>
+           <option value="Returning Coustomer">Returning Coustomer</option>
+           <option value="Pluralsight instructor">Pluralsight instructor</option>
+		   <option value="Microsoft">Microsoft</option>
+           <option value="MSDN">MSDN</option>
+           <option value="Trade Show">Trade Show</option>
+           <option value="Search Engine">Search Engine</option>
+		   <option value="Facebook">Facebook</option>
+           <option value="Social Community">Social Community</option>
+           <option value="User Group">User Group</option>
+           <option value="Linkdien">Linkdien</option>
+		  		   
+         </select>
+		 </div>
+	 </div>
+	 <div class="control-group">
+	    <label class="control-label" for="UserInfo_JobTitle">JobTitle:</label>
+		<div class="controls">
+	         <input class="input-xxlarge" id="UserInfo_JobTitle" name="UserInfo.JobTitle" type="text">
+		</div>
+	</div>
+	
+	<div class="checkbox">
+	   <label class="checkbox inline">
+	   <input type="checkbox" id="UserInfo_Check1" name="UserInfo.Check1" >
+	   I like Pina Coladas
+	   </label>
+	   <label class="checkbox inline">
+	   <input  type="checkbox" id="UserInfo_Check2" name="UserInfo.Check2" >
+	   I like getting caught in the rain
+	   </label>
+	   
+	   </div>
+
+	<div class="radio">
+	    <label class="radio">
+		<input type="radio" name="gender" value="male" checked> 
+		I'm into yoga
+		
+	   </label>
+	   <label class="radio">	
+       <input type="radio" name="gender" value="female"> 
+		I'm not into yoga
+	   </label>
+	   
+	</div>
+	
+	
+	<label for="describe">Describ Yourself:</label>
+	
+	  <textarea class="Input_block_level" id="describe" rows="4"></textarea>
+	  <input type="submit" value="SignUp!" class="btn btn-primary"/>
+    
+	</fieldset>
+</form>
+
+  </div>
+</div>
+
+
+<div class="row">
+   <div class="span12">
+      <h2>Extending Inputs</h2>
+	  <form action="/signup" method="post">
+	    <fieldset>
+	    <legend>To get started, provied us with the following information</legend>
+		<div class="input-prepend">
+		   <span class="add-on">@</span>
+		   <input id="handle" type="text" placeholder="Twitter Handle"/>
+		 </div>
+		 <div class="input-prepend input-append">
+		     <span class="add-on">$</span>
+			 <input id="Text2" type="text" placeholder="Budget"/>
+			 <span class="add-on">0.00</span>
+		</div>
+
+		</fieldset>
+	  </form>
+
+
+   </div>
+
+</div>
+</div>
+
+</body>
+</html>
