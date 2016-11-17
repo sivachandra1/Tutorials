@@ -1,0 +1,27 @@
+{
+  "name": "Bower_basics",
+  "authors": [
+    "sivakumar kalisetty <siva.seleniumqa!@gmail.com>"
+  ],
+  "description": "my bower projects",
+  "main": "index.html",
+  "keywords": [
+    "sivakumar"
+  ],
+  "license": "MIT",
+  "homepage": "www.pluralsight.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.7",
+    "jasmine-core": "jasmine#^2.5.2",
+    "lodash": "^4.17.2",
+    "bootstrap": "^3.3.7"
+  }
+}
